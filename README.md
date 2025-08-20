@@ -21,6 +21,24 @@ docker compose ps
 
 ![рисунок 1](https://github.com/ysatii/monitoring-hw3/blob/main/img/img1.jpg)
 
+2. зайдем в веб интерфейс grafana
+http://localhost:3000 
+admin
+admin
+
+![рисунок 2](https://github.com/ysatii/monitoring-hw3/blob/main/img/img2.jpg)
+
+3. Подключим поднятый вами prometheus, как источник данных.
+Grafana → ⚙️ Configuration → Data sources → Add data source → Prometheus
+
+URL: http://prometheus:9090 (имя сервиса из docker-compose в одной сети)
+
+Save & Test — должна быть зелёная галочка
+
+![рисунок 3](https://github.com/ysatii/monitoring-hw3/blob/main/img/img3.jpg)
+
+4. скриншот веб-интерфейса grafana со списком подключенных Datasource
+![рисунок 4](https://github.com/ysatii/monitoring-hw3/blob/main/img/img4.jpg)
 
 ## Задание 2
 

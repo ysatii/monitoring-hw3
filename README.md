@@ -57,6 +57,20 @@ Save & Test — должна быть зелёная галочка
 
 Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
+## Решение 2
+1. CPU Utilization, % 
+![рисунок 5](https://github.com/ysatii/monitoring-hw3/blob/main/img/img5.jpg)
+``` promsql
+100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+```
+Unit: percent
+Legend: {{instance}}
+
+2.
+3.
+4.
+
+
 ## Задание 3
 
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».

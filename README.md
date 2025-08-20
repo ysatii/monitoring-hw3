@@ -60,13 +60,26 @@ Save & Test — должна быть зелёная галочка
 ## Решение 2
 1. CPU Utilization, % 
 ![рисунок 5](https://github.com/ysatii/monitoring-hw3/blob/main/img/img5.jpg)
+
 ``` promsql
 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
-```
-Unit: percent
-Legend: {{instance}}
+```  
+Unit: percent  
+Legend: {{instance}}  
 
-2.
+2. Load Average 1/5/15 (одна панель, три серии)
+![рисунок 6](https://github.com/ysatii/monitoring-hw3/blob/main/img/img6.jpg)
+
+Query A = node_load1
+Legend: load1 {{instance}}
+
+Query B = node_load5
+Legend: load5 {{instance}}
+
+
+Query C = node_load15
+Legend: load15 {{instance}}
+
 3.
 4.
 

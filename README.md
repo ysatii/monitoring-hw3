@@ -147,7 +147,9 @@ stress-ng --cpu 0 --timeout 360
 ```
 (--cpu 0 = все ядра)
 ![рисунок 15](https://github.com/ysatii/monitoring-hw3/blob/main/img/img15.jpg)  
-это  подтверждает что рлет работает правильно
+![рисунок 16](https://github.com/ysatii/monitoring-hw3/blob/main/img/img16.jpg) 
+![рисунок 17](https://github.com/ysatii/monitoring-hw3/blob/main/img/img17.jpg) 
+это  подтверждает что арлет работает правильно
 
 
 

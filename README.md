@@ -105,16 +105,14 @@ Unit: gigabytes (GB)
 ![рисунок 9](https://github.com/ysatii/monitoring-hw3/blob/main/img/img9.jpg)
 
 — Свободно, %
-Query A = (node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|squashfs"}
- / node_filesystem_size_bytes{fstype!~"tmpfs|overlay|squashfs"}) * 100
+Query A = (node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|squashfs"}  / node_filesystem_size_bytes{fstype!~"tmpfs|overlay| quashfs"}) * 100
 Legend: free % {{instance}} {{mountpoint}}
 Unit: percent (0-100)
 ![рисунок 10](https://github.com/ysatii/monitoring-hw3/blob/main/img/img10.jpg)
 
 
 — Занято, %
-Query A = (1 - node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|squashfs"}
-      / node_filesystem_size_bytes{fstype!~"tmpfs|overlay|squashfs"}) * 100
+Query A = (1 - node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|squashfs"} / node_filesystem_size_bytes{fstype!~"tmpfs|overlay|squashfs"}) * 100
 Legend: used % {{instance}} {{mountpoint}}
 Unit: percent (0-100)
 ![рисунок 11](https://github.com/ysatii/monitoring-hw3/blob/main/img/img11.jpg)

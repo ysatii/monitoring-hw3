@@ -80,7 +80,23 @@ Legend: load5 {{instance}}
 Query C = node_load15
 Legend: load15 {{instance}}
 
-3.
+3.  количество свободной оперативной памяти;
+- Абсолютное значение (в байтах)
+
+Query: node_memory_MemAvailable_bytes
+Legend: {{instance}}
+Unit: bytes (в Grafana → Panel → Field → Unit).
+
+![рисунок 7](https://github.com/ysatii/monitoring-hw3/blob/main/img/img7.jpg)
+
+-  Процент от общего объёма
+
+Query: (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100
+Legend: free RAM % {{instance}}
+Unit: percent.
+
+![рисунок 8](https://github.com/ysatii/monitoring-hw3/blob/main/img/img8.jpg)
+
 4.
 
 
